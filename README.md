@@ -55,7 +55,7 @@ The analysis uses MySQL and SQL to convert raw login data into meaningful insigh
 | **DBMS**           | MySQL 8.0+ |
 | **Database Type**  | Relational Database |
 | **Tables**         | `USERS`, `LOGINS` |
-| **Primary Keys**   | `USERS.USER_ID`, `LOGINS.SESSION_ID` \
+| **Primary Keys**   | `USERS.USER_ID`, `LOGINS.SESSION_ID`|
 | **Foreign Key**    |`LOGINS.USER_ID` |
 | **Relationship**   | One-to-Many |
 | **Main Domain**    | Employee Login & Session Analysis |
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS LOGINS (
 ├──────────────────────────┤
 │ FK  USER_ID              │
 │     LOGIN_TIMESTAMP      │
-│ PK  SESSION_ID            │
+│ PK  SESSION_ID           │
 │     SESSION_SCORE        │
 └──────────────────────────┘
 ```
@@ -668,18 +668,21 @@ another MySQL-compatible SQL environment.
 ``` text
 Employee-Login-Logout-SQL-Case-Study/
 │
-├── README.md
+├── Database
+│   ├── ER_Diagram
+│   ├── CaseStudy_Schema.SQL
+│   └── README.MD
+|
+├── Business_Requirments
+│   ├── Employee-Login-Logout-SQL-CaseStudy_Docx
+│   └── Employee-Login-Logout-SQL-CaseStudy_PDF
 │
-├── sql/
-│   ├── employee_login_logout_schema.sql
-│   └── employee_login_logout_queries.sql
+├── SQL_Queries
+│   ├── Casestudy_Queries
+│   └── README.Md
 │
-├── screenshots/
-│   ├── database_schema.png
-│   └── query_results.png
-│
-└── docs/
-    └── project_notes.md
+└── Result
+    └── Query.png
 ```
 
 ------------------------------------------------------------------------
@@ -747,9 +750,9 @@ Data Analytics / SQL Portfolio Project
 
 ### Connect With Me
 
--   🌐 Portfolio: `YOUR_PORTFOLIO_URL`
--   💻 GitHub: `YOUR_GITHUB_URL`
--   🔗 LinkedIn: `YOUR_LINKEDIN_URL`
+-   🌐 Portfolio: https://l1nq.com/yy1y33m
+-   💻 GitHub: https://sl1nk.com/afwd2xq
+-   🔗 LinkedIn: https://l1nk.dev/tliq4xd
 
 ------------------------------------------------------------------------
 

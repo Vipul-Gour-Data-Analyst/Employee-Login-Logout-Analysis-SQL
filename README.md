@@ -49,16 +49,16 @@ The analysis uses MySQL and SQL to convert raw login data into meaningful insigh
 
 # 🗄️ Database Information
 
-  Component       Details
-  --------------- --------------------------------------
-  |Database       | `Employee_CaseStudy`
-  |DBMS           | MySQL 8.0+
-  |Database Type  | Relational Database
-  |Tables         | `USERS`, `LOGINS`
-  |Primary Keys   | `USERS.USER_ID`, `LOGINS.SESSION_ID`
-  |Foreign Key    |`LOGINS.USER_ID`
-  |Relationship   | One-to-Many
-  |Main Domain    | Employee Login & Session Analysis
+| Component | Details |
+|---|---|
+| **Database** | 'Employee_CaseStudy' |
+| **DBMS**           | MySQL 8.0+ |
+| **Database Type**  | Relational Database |
+| **Tables**         | `USERS`, `LOGINS` |
+| **Primary Keys**   | `USERS.USER_ID`, `LOGINS.SESSION_ID` \
+| **Foreign Key**    |`LOGINS.USER_ID` |
+| **Relationship**   | One-to-Many |
+| **Main Domain**    | Employee Login & Session Analysis |
 
 ------------------------------------------------------------------------
 
@@ -68,11 +68,11 @@ The analysis uses MySQL and SQL to convert raw login data into meaningful insigh
 
 The `USERS` table stores employee/user information.
 
-  Column          Data Type     Constraint    Description
-  --------------- ------------- ------------- ------------------------
-  `USER_ID`       INT           PRIMARY KEY   Unique user identifier
-  `USER_NAME`     VARCHAR(20)   NOT NULL      User name
-  `USER_STATUS`   VARCHAR(20)   NOT NULL      Current user status
+ | Column        |  Data Type   | Constraint   | Description
+ |---|---|---|---|
+ | **USER_ID** |     INT        |   PRIMARY KEY |  Unique user identifier |
+ | **USER_NAME** |   VARCHAR(20)|   NOT NULL    |  User name |
+ | **USER_STATUS** |   VARCHAR(20) |   NOT NULL |  Current user status |
 
 ### SQL
 
@@ -90,12 +90,12 @@ CREATE TABLE IF NOT EXISTS USERS (
 
 The `LOGINS` table stores employee login/session activity.
 
-  Column              Data Type   Constraint              Description
-  ------------------- ----------- ----------------------- ---------------------------
-  `USER_ID`           INT         NOT NULL, FOREIGN KEY   Identifies the user
-  `LOGIN_TIMESTAMP`   DATETIME    NOT NULL                Login date and time
-  `SESSION_ID`        INT         PRIMARY KEY             Unique session identifier
-  `SESSION_SCORE`     INT         ---                     Session score
+  | Column        |  Data Type   | Constraint   | Description
+  |---|---|---|---|
+  |**USER_ID**|           INT   |      NOT NULL, FOREIGN KEY|   Identifies the user|
+  |**LOGIN_TIMESTAMP**   DATETIME |   NOT NULL      |          Login date and time|
+  |**SESSION_ID**|        INT      |   PRIMARY KEY  |           Unique session identifier|
+  |**SESSION_SCORE**|     INT      |   ---         |            Session score|
 
 ### SQL
 
@@ -625,12 +625,12 @@ ORDER BY USER_ID, LOGIN_TIMESTAMP;
 
 # 🛠️ Tools & Technologies
 
-  Technology                Usage
-  ------------------------- ----------------------------
-  **MySQL 8.0+**            Database & SQL analysis
-  **SQL**                   Data querying and analysis
-  **Relational Database**   Data modeling
-  **GitHub**                Project/version management
+  |Technology|Usage|              
+  |---|---|
+  |**MySQL 8.0+**|            Database & SQL analysis|
+  |**SQL**|                   Data querying and analysis|
+  |**Relational Database**|   Data modeling|
+  |**GitHub**|                Project/version management|
 
 ------------------------------------------------------------------------
 

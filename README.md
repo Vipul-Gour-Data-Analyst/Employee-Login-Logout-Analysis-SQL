@@ -35,13 +35,13 @@ Organizations need to monitor employee login activity to understand user engagem
 
 This project analyzes employee login and session data to help management:
 
-Identify employees who have not logged in recently.
-Analyze login frequency and session activity.
-Compare active and inactive employees.
-Identify high and low login activity patterns.
-Analyze session scores and employee engagement.
-Track login trends across different time periods.
-Rank employees based on login activity.
+- Identify employees who have not logged in recently.
+- Analyze login frequency and session activity.
+- Compare active and inactive employees.
+- Identify high and low login activity patterns.
+- Analyze session scores and employee engagement.
+- Track login trends across different time periods.
+- Rank employees based on login activity.
 
 The analysis uses MySQL and SQL to convert raw login data into meaningful insights that can support workforce monitoring and operational decision-making.
 

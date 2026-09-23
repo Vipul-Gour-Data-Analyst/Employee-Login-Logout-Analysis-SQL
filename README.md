@@ -51,8 +51,7 @@ The analysis uses MySQL and SQL to convert raw login data into meaningful insigh
 
   Component       Details
   --------------- --------------------------------------
-  
-  | Database     |   `Employee_CaseStudy`
+  Database        `Employee_CaseStudy`
   DBMS            MySQL 8.0+
   Database Type   Relational Database
   Tables          `USERS`, `LOGINS`
